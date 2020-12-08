@@ -1,0 +1,23 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>changeColor in action</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="color-panel">
+        <div id="white" data-color="#fff" onclick="changeColor('white')"> </div>
+        <div id="deeppink" data-color="deeppink" onclick="changeColor('deeppink')"> </div>
+        <div id="purple" data-color="#b39ddb" onclick="changeColor('purple')"> </div>
+        <div id="green" data-color="#6f9e38" onclick="changeColor('green')"> </div>
+        <div id="skyblue" data-color="skyblue" onclick="changeColor('skyblue')"> </div>
+        <div id="gold" data-color="gold" onclick="changeColor('gold')"> </div>
+    </div>
+    <script>
+        function changeColor(colorValue) {
+            document.body.style.backgroundColor = document.getElementById(colorValue).dataset.color
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+ /* Задаем цвет фона по умолчанию */
+ body{
+    background-color: #b2ebf2;
+}
+
+/* Позиционируем палитру так, чтобы она располагалась в правом верхнем углу страницы */
+.color-panel {
+    position: absolute; /* задаем абсолютное позиционирование */
+    display: flex;
+    top: 0px; /* прижимаем палитру к верхней части страницы  */
+    right: 30px; /* создаем внешний отступ справа */
+    background-color: #fff; 
+    height: 60px;
+    padding: 17px 5px 17px 5px; /* задаем внутренние отступы */
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35); /* добавим тень*/
+    -moz-box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
+    box-shadow: 0px 5px 15px 0px rgba(0,0,0,0.35);
+    border-radius: 0px 0px 30px 30px; /* закруглим края панели */
+}
+
+/* Зададим размеры ячейкам таблицы, закруглим их и прижмем к левому краю панели */
+.color-panel div {
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    margin: 5px;    
+}
+
+.color-panel {
+    background-color: rgb(210, 219, 223)
+}
+
+/* Для каждого блока с «цветным» идентификатором зададим соответствующий названию цвет фона */
+#white{
+    background-color: #fff;
+}
+#deeppink{
+    background-color: deeppink;
+}
+#purple{
+    background-color: #b39ddb;
+}
+#green{
+    background-color: #6f9e38;
+}
+#skyblue{
+    background-color: skyblue;
+}
+#gold {
+    background-color: gold;
+}
